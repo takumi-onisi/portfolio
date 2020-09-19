@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    font-size: 18px;
+}
+
+a{
+    color: rgb(8, 20, 87);
+}
+
+a:visited{
+    
+    color: rgb(92, 23, 18);
+}
+
+.textAlign-center{
+    text-align: center;
+}
+
+.textAlign-right{
+    text-align: right;
+}
+
+ul{
+    padding-inline-start: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.listInline{
+    display: inline;
+    padding-left: -40px;
+    padding-right: 16px;
+}
+/* ヘッダー */
+
+header{
+    padding: 1rem;
+}
+
+#siteTitle{
+    font-size: 1.7rem;
+}
+
+#lastDate{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+
+/* フッター */
+.footer{
+    padding: 1rem;
+    font-size: 0.7rem;
+    color: white;
+    background-color: black;
+}
+
+.footer a{
+    color: white;
+}
+
+/* メイン */
+
+/* 枠組み関係 */
+#contentsWrapper{
+    opacity: 0.95;
+    background-color: rgb(58, 91, 122);
+    padding: 5rem 10% 3rem 10%;
+}
+
+.content{
+    background-color: white;
+    padding: 2rem 3rem; 
+    border-radius: 5px;
+    margin: 0 auto 5rem auto;
+}
+
+.borderHighLight{
+    margin:  0 0 5rem 0;
+    padding: 2rem 2rem 0 2rem;
+    border: solid 0.2rem rgb(62, 116, 160);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(156, 186, 214);
+}
+
+.borderHighLight:last-child{
+    margin-bottom: 1rem;
+}
+
+
+.descriptionAboutExample{
+    margin: 1.5rem 1rem;
+    width: 65%;
+
+}
+
+/* 学習の成果のセクションでコンテンツの分かれ目で#contentsWrapperの背景色がみえるようにする */
+.backgroundTrans{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* ヘッダーの真上の要素のマージンを調整 */
+.marginBottem0{
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* 名前のルビを名前の真横に表示させる */
+[data-ruby]::after{
+    content: attr(data-ruby);
+    margin-left: 0.5rem;
+}
+
+rt{
+    display: none;
+}
+
+
+
+
+
+/* 見出し関係 */
+
+.mainHeading{
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0.2rem 0;
+    border-bottom: 0.25rem solid rgb(58, 91, 122);
+    
+}
+
+.subHeading{
+    padding-left: 0.7rem;
+    font-size: 1.3rem; 
+    margin: 3.5rem 0 1.5rem 0;
+    border-left: 0.3rem solid rgb(255, 0, 125);
+}
+
+
+.lead{
+    font-size: 1.2rem;
+    color: rgb(31, 31, 31);
+}
+
+#messageFromAuthor .lead{
+    font-size: 1.17rem;
+    border-bottom: 0.17rem solid rgb(255, 0, 125);
+}
+
+
+
+/* フレックス関係 */
+.flexConteiner{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+
+.flexItem0{
+    order: 0;
+}
+
+.flexItem1{
+    order: 1;
+}
+
+
+
+
+/* 小さい画像関係 */
+.thumbNail{
+    min-width: 160px;
+    padding: 1rem;
+    margin: 1.5rem 0.5rem;
+    text-align: center;
+    width: 25%;
+    
+}
+
+.thumbNail img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+/* 画面サイズによって写真とテキストを横に並べるか縦に並べるか切り替える */
+@media screen and (max-width:1074px){
+    *{line-height: 1.7}
+
+    body{
+        min-width: 300px;
+    }
+
+    #contentsWrapper{
+        padding: 3rem 1rem ;
+    }
+
+    .borderHighLight{
+        margin: 1.5rem 0;
+        padding: 2rem 0.5rem 0 0.5rem;
+        
+    }
+
+    .flexConteiner{
+        flex-direction: column; 
+    }
+
+    .descriptionAboutExample{
+        margin: 1.5rem 0;
+        width: 100%;
+    
+    }
+
+
+}
