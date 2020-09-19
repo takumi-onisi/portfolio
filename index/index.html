@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="application-name" content="プロフィール">
+    <meta name="apple-mobile-web-app-title" content="takumi-onisiプロフィール">
+    <meta name="author" content="takumi-onisi">
+    <meta name="description" content="takumi-onisiの紹介">
+    <meta name="keywords" content="takumi-onisi,紹介,プロフィール,学習,目標,
+    プログラミング,ビジネスコンテスト">
+    <title>takumi-onisiについて</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="siteTitle">takumi-onisi
+            <br />プロフィールサイト</h1>
+        <p id="lastDate">2020/09/19</p>
+
+        <nav>
+            <ul class="textAlign-right">
+                <li>
+                    <a href="#profile">プロフィール</a>
+                </li>
+                <li>
+                    <a href="#aboutLearningLanguages">学んだ言語</a>
+                </li>
+                <li>
+                    <a href="#deliverablesOfStuding">学習の成果</a>
+                </li>
+                <li>
+                    <a href="#messageFromAuthor">メッセージ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="contentsWrapper">
+
+        <section id="profile" class="content">
+            <div class="textAlign-center">
+                <h1 class="mainHeading">プロフィール</h1>
+            </div>
+            <div class="textAlign-center">
+                <p>
+                    <span id="nameOfAuthor">takumi-onisi</span>
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="aboutLearningLanguages" class="content">
+            <div class="textAlign-center">
+                <h1 class="mainHeading">言語</h1>
+                <ul>
+                    <li class="listInline">HTML</li>
+                    <li class="listInline">CSS</li>
+                    <li class="listInline">JavaScript</li>
+                    <li class="listInline">Python</li>
+                    <li class="listInline">Java</li>
+                    <li class="listInline">Ruby</li>
+                </ul>
+            </div>
+            <div class="textAlign-center">
+                <h1 class="mainHeading">フレームワーク</h1>
+                <ul>
+                    <li class="listInline">Laravel</li>
+                    <li class="listInline">Ruby on Rails</li>
+                    <li class="listInline">Express</li>
+                </ul>
+            </div>
+            <div class="textAlign-center">
+                <h1 class="mainHeading">学習方法</h1>
+                <ul>
+                    <li class="listInline">書籍</li>
+                    <li class="listInline">Web</li>
+
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="deliverablesOfStuding" class="backgroundTrans">
+
+            <section id="deliverablesOfProgramingLearning" class="content">
+
+                <div class="textAlign-center">
+                    <h1 class="mainHeading">プログラミング学習の成果</h1>
+                </div>
+                <section class="subContainer">
+
+                    <h2 class="subHeading">アプリの制作</h2>
+
+                    <section class="example borderHighLight flexConteiner">
+
+                        <article class="descriptionAboutExample flexItem1">
+                            <h2 class="lead">大学単位計算アプリ</h2>
+                            <p>
+                                架空の大学の学科科目において、選択した授業を履修した場合何単位取得でき、
+                                卒業まで何単位必要なのか分かります。
+                            </p>
+                            <p>
+                                卒業要件を満たすように履修計画を立てるのは大変な作業なので、その助けになればと思い制作しました。
+                            </p>
+                            <p>
+                                製作した当初は、必要単位の計算を科目ごとにif文を記述し判定していましたが、
+                                HTMLの情報と連携することで判定をまとめて行えるようにしました。
+                            </p>
+                            <P>
+                                さらにオブジェクト指向を取り入れ、機能の追加や例外的な処理を行いやすくしました。
+                            </P>
+
+
+                            <p class="textAlign-right"><a href="../risyu-calculator/index.html">使ってみる</a></p>
+                        </article>
+
+                        <figure class="thumbNail flexItem0">
+                            <a href="../risyu-calculator/index.html">
+                                <img src="img/risyu-hantei-app.png" alt="架空の大学の卒業までに必要な単位数を計算してくれるアプリ">
+                                <figcaption>架空大学単位計算アプリ</figcaption>
+                            </a>
+
+                        </figure>
+
+                    </section>
+                    <!--example単位計算アプリ閉じ-->
+
+                    <section class="example borderHighLight flexConteiner">
+                        <article class="descriptionAboutExample flexItem1">
+                            <h2 class="lead">画像記憶ゲーム</h2>
+                            <p>
+                                二つの画像がランダムに現れ、現れた画像の順番を覚えるゲームです。
+                            </p>
+                            <p>
+                                JavaScriptの学習本で、再帰関数とsetTimeout関数を使ったスライドショーを作る過程があったので、
+                                それを応用して次々に切り替わる画像の順番を覚えるゲームを作りました。
+
+                            </p>
+                            <p>
+                                このゲームの制作を通してプログラムを書いていく際に
+                                一つ一つ動作を確認しながら作っていくことの大切さを学びました。
+                            </p>
+                            <p>
+                                正解するごとにゲームの難易度（レベル）が増加したり、
+                                それに応じて画像が現れる回数や速さが変化したりするように、
+                                少しずつゲームの機能を増やしていきました。
+                            </p>
+
+                            <p class="textAlign-right"><a href="../memorizing-game/game-app.html">遊んでみる</a></p>
+                        </article>
+
+                        <figure class="thumbNail flexItem0">
+                            <a href="../memorizing-game/game-app.html">
+                                <img src="img/game-app.png" alt="画像を記憶するゲーム">
+                                <figcaption>画像記憶ゲーム</figcaption>
+                            </a>
+                        </figure>
+
+                    </section>
+                    <!--example画像記憶ゲーム閉じ-->
+                </section>
+            </section>
+
+
+
+
+            <section id="deliverablesOfLearningExceptPrograming" class="content">
+
+                <div class="textAlign-center">
+                    <h1 class="mainHeading">プログラミング以外に挑戦したこと</h1>
+                </div>
+                <section class="subContainer">
+
+                    <h2 class="subHeading">
+                        学生ビジネスコンテストに応募
+                    </h2>
+
+                    <section class="example borderHighLight flexConteiner">
+                        <article class="descriptionAboutExample flexItem1">
+                            <h3 class="lead">餃子のハーモニカ？</h3>
+                            <p>
+                                食品サンプルとハーモニカを合体させた、新しい商品を提案しました。
+                            </p>
+                            <P>
+                                ミニハーモニカという小型のハーモニカを参考にした、
+                                ぎょうざそっくりのハーモニカです。
+                            </P>
+                            <p>
+                                見た目のユニークさに加えて、外国人観光客向けの
+                                お土産としての需要があると考えました。
+                            </p>
+                            <p>
+                                ビジネスコンテストでは一次審査を通過し、二次審査のプレゼンテーションまで進むことが出来ました。
+                                市場規模やターゲットを考え、価格設定や売上の試算を行い、商品の魅力を伝える経験は
+                                ビジネスを知る良い学びになりました。
+                            </p>
+                        </article>
+
+                        <figure class="thumbNail flexItem0">
+                            <a href="img/gyoza-harmonica.png">
+                                <img src="img/gyoza-harmonica.png" alt="餃子のハーモニカ">
+                                <figcaption>餃子のハーモニカ</figcaption>
+                            </a>
+                        </figure>
+
+                    </section>
+                    <!--example ぎょうざハーモニカ閉じ-->
+
+                </section>
+                <!--class subConteinert 閉じ-->
+
+            </section>
+            <!-- section id="deliverablesOfStuding" 閉じ -->
+
+            　
+
+            <section id="messageFromAuthor" class="content marginBottem0">
+                <div class="textAlign-center">
+                    <h1 class="mainHeading">メッセージ</h1>
+                </div>
+
+                <section class="borderHighLight marginBottem0">
+                    <h2 class="lead">プログラミングを学んだ理由</h2>
+                    <p>
+                        プログラミングができるようになれば、自分の人生を切り開いていけるのではと考えたことが、
+                        プログラミングの勉強を始めた理由の一つです。
+                    </p>
+
+
+
+
+
+                    <h2 class="lead">プログラミング学習を通じて</h2>
+
+                    <p>
+                        コードを書いていてつまずいた時でも、どこが原因なのか、他の方法はないか調べたりと
+                        試行錯誤をすることで前に進んで来ました。
+                    </p>
+                    <p>
+                        プログラムが思うように動いた時には悩んだ分の喜びを得られ、
+                        ものづくりの楽しさを感じました。
+                    </p>
+
+                    <h2 class="lead">私にとって「学ぶ」とは</h2>
+                    <p>
+                        これまで、学習を通して自分が成長している、
+                        前に進んでいると感じ、励まされてきました。
+
+                    </p>
+
+                    <p>
+                        私にとって学ぶということは、未来へ進む力を与えてくれることであり、
+                        自分の将来をあきらめないという気持ちの表れであると感じています。
+                    </p>
+
+
+
+                    <h2 class="lead">これからの目標</h2>
+
+                    <p>
+                        私はこれまで他の学生とは異なる道を進んで来ました。
+                    </p>
+                    <p>
+                        将来について不安になることもありましたが、希望を持って前に進んで来ました。
+                    </p>
+                    <p>
+                        これから働くことを通じて、自分と同じように将来に対して悩んでいる人に何かしらのヒントになれればと考えています。
+                        そして、自分がこれから身に着けていく知識や経験で社会に貢献していくことが私の目標です。
+                    </p>
+
+                </section>
+            </section>
+
+
+
+    </div>
+    <!-- contentsWrapper 閉じ　-->
+
+    <footer class="footer textAlign-center">
+        <p>
+            takumi-onisi
+            　プロフィールサイト
+        </p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#profile">プロフィール</a>
+                </li>
+                <li>
+                    <a href="#aboutLearningLanguages">学んだ言語</a>
+                </li>
+                <li>
+                    <a href="#deliverablesOfStuding">学習の成果</a>
+                </li>
+                <li>
+                    <a href="#messageFromAuthor">メッセージ</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+</body>
+
+</html>
